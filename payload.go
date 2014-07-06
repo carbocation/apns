@@ -19,6 +19,9 @@ type Aps struct {
 	// The sound to play when the alert is received.
 	// Optional
 	Sound string `json:"sound,omitempty"`
+	// Any additional data
+	// Optional
+	Data interface{} `json:"data,omitempty"`
 }
 
 // The payload sent to the APNS server
